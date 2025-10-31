@@ -1,21 +1,9 @@
 package com.example.praktikum5
 
-import android.R.attr.divider
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.selection.selectable
-import androidx.compose.material3.Button
-import androidx.compose.material3.ElevatedCard
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.RadioButton
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -23,14 +11,12 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
-private val Unit.DarkGrey: Any
-private val Unit.DarkGrey: Any
-private val Nothing?.CenterHorizontally: Any
+
+
 
 @Composable
 
-fun FormDataDiri(
-    modifier: Modifier, it: Any
+fun FormDataDiri(modifier: Modifier = Modifier
 ){
     //variabel variabel untuk mengingat nilai masukan dari keyboard
     var textNama by remember {mutableStateOf("")}
@@ -42,13 +28,12 @@ fun FormDataDiri(
     var alamat by remember {mutableStateOf("")}
     var jenis by remember {mutableStateOf("")}
 
-    val gender:List<String> = ListOf("Laki-Laki","Perempuan")
+    val gender: List<String> = listOf("Laki-Laki","Perempuan")
 
-    val horizontalAlignment = null
     Column(modifier = Modifier.padding(top = 50.dp),
-        vertikalArrangement = Arrangement.Top,
+        verticalArrangement = Arrangement.Top,
 
-        horizontalAlignment.CenterHorizontally) {
+        horizontalAlignment = Alignment.CenterHorizontally) {
         OutlinedTextField(
             value = textNama,
             singleLine = true,
@@ -93,6 +78,16 @@ fun FormDataDiri(
             }
         )
 
+        Divider(
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
+                id = R.dimen.padding_medium
+            )),
+            thickness = dimensionResource(R.dimen.Divider_tipis),
+            color = Color.DarkGray
+        )
+
 
 }
+
+
 
