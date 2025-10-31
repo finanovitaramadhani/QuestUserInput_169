@@ -21,6 +21,12 @@ fun FormDataDiri(modifier: Modifier
     column(modifier = Modifier.padding(top = 50.dp),
         vertikalArrangement = Arrangement.Top,
 
+        horizontalAlignment.CenterHorizontally) {
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(250.dp),
 
-    }
+
 }
