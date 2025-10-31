@@ -1,5 +1,7 @@
 package com.example.praktikum5
 
+import androidx.compose.runtime.Composable
+
 @Composable
 
 fun FormDataDiri(modifier: Modifier
@@ -13,5 +15,8 @@ fun FormDataDiri(modifier: Modifier
     var nama by remember {mutableStateOf("")}
     var alamat by remember {mutableStateOf("")}
     var jenis by remember {mutableStateOf("")}
+
+    val gender:List<String> = ListOf("Laki-Laki","Perempuan")
+
 
 }
