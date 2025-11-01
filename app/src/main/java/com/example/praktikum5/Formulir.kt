@@ -51,4 +51,9 @@ fun FormFormulir(modifier: Modifier = Modifier) {
                 .padding(horizontal = 8.dp),
             elevation = CardDefaults.elevatedCardElevation(defaultElevation = 8.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
-        ) }
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) }
