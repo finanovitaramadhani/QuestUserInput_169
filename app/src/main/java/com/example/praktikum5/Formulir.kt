@@ -94,4 +94,26 @@ fun FormFormulir(modifier: Modifier = Modifier) {
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = "STATUS PERKAWINAN"
+                )
+                statusList.forEach { item ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            ),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        )
+                        Text(item)
+                    }
+                }
+
                 }
