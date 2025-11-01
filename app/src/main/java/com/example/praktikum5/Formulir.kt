@@ -31,5 +31,16 @@ fun FormFormulir(modifier: Modifier = Modifier) {
             .padding(16.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    )
-}
+    ) {
+
+        Text(
+            text = "Formulir Pendaftaran",
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.Blue)
+                .padding(top = 20.dp, bottom = 24.dp),
+            textAlign = TextAlign.Center,
+            color = Color.White
+        )
+
+    }
