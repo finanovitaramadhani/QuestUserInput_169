@@ -92,4 +92,6 @@ fun FormFormulir(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
-}
+
+                Spacer(modifier = Modifier.height(8.dp))
+                }
