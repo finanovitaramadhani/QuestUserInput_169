@@ -24,4 +24,12 @@ fun FormFormulir(modifier: Modifier = Modifier) {
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
     val statusList: List<String> = listOf("Janda", "Lajang", "Duda")
 
-    }
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color.White)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+}
