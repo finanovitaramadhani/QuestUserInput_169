@@ -43,4 +43,6 @@ fun FormFormulir(modifier: Modifier = Modifier) {
             color = Color.White
         )
 
-    }
+        Spacer(modifier = Modifier.height(16.dp))
+
+        }
