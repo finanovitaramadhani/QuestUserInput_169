@@ -116,4 +116,6 @@ fun FormFormulir(modifier: Modifier = Modifier) {
                     }
                 }
 
+                Spacer(modifier = Modifier.height(8.dp))
+
                 }
